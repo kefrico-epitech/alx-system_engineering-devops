@@ -1,0 +1,8 @@
+# Step 1: Create the "school.magic" file with the magic pattern
+echo "0       string  SCHOOL  School data file" > school.magic
+
+# Step 2: Convert the "school.magic" file to binary format
+file -C -m school.magic
+
+# Step 3: Test a file named "datafile" for being a School data file
+file -m school.mgc datafile

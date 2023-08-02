@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Create directories
+mkdir -p welcome/to/school
