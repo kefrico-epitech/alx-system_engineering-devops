@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Apu | grep -v "^\.\/\|^\.\.\/" | tr '\n' ',' | sed 's/,$/\n/'
+{ printf './, ../, ' && ls -1Ap | grep -v "^\.\/\|^\.\.\/" | sort -d | tr '\n' ',' | sed 's/,$/\n/'; }
