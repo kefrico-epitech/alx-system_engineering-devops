@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | grep -v "/\|^\.\.$" | sort -d | paste -sd ',' -
+ls -xamp
