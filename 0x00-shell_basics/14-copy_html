@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in *.html; do cp -nu "$file" ../; done
+find . -maxdepth 1 -name "*.html" -type f -newer ../ -exec sh -c 'cp -u "$@" ../' sh {} +
