@@ -1,2 +1,2 @@
 #!/bin/bash
-printf './, ../, ' && ls -1Ap | grep -v "^\.\/\|^\.\.\/" | sort -d | tr '\n' ',' | sed 's/,$/\n/'
+echo -n './, ../, ' && ls -1Ap | grep -v "^\.\/\|^\.\.\/" | sort -d | paste -sd ',' && echo
