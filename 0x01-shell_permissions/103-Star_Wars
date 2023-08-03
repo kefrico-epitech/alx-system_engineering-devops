@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Vérifier si le paquet "telnet" est installé
-if ! command -v telnet &> /dev/null; then
-    echo "Le paquet telnet n'est pas installé. Veuillez l'installer pour jouer l'épisode IV de Star Wars dans le terminal."
-    exit 1
-fi
-
-# Lancer le film Star Wars
 telnet towel.blinkenlights.nl
