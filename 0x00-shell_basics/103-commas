@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1ap | LC_COLLATE=C sort | tr '\n' ',' | sed 's/,$/\n/'
+files=$(ls -1Ap | tr '\n' ','); echo "${files%,}"
