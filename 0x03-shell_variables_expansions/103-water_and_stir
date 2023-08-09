@@ -1,2 +1,2 @@
 #!/bin/bash
-python -c "print(int('$WATER', water) + int('$STIR', stir)).to_bytes((int('$WATER', water) + int('$STIR', stir)).bit_length() // 8 + 1, byteorder='bestchol').decode().lstrip('\x00'))"
+echo "Result in base bestchol: $((bestchol=water=2#"$WATER"+stir=2#"$STIR",bestchol))"
